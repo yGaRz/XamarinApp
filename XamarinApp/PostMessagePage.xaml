@@ -1,13 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XamarinApp.Page1">
+             x:Class="XamarinApp.PostMessagePage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Go to page2"/>
-            <Button x:Name="button2" Text="Go" Clicked="button2_Clicked"/>
-            <Label Text="Go to Page3"/>
-            <Button x:Name="button3" Text="Go" Clicked="button3_Clicked" />
+            <TableView>
+                <TableRoot>
+                    
+                </TableRoot>
+            </TableView>
+            
+            <Button Text="Return" Clicked="Button_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:serversettings="clr-namespace:XamarinApp.ServerSettings" 
+             x:DataType="serversettings:ServerSettingsModel"
+             x:Class="XamarinApp.ServerSettingsPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <TableView>
+                <TableRoot>
+                    <TableSection Title="Адрес сервера:">
+                        <EntryCell Label="Url:" Text="{Binding url}"/>                        
+                    </TableSection>
+                    <TableSection Title="Gwt-tocken:">
+                        <EntryCell Label="Tocken:" Text="{Binding gwtTocken}"/>
+                    </TableSection>                    
+                </TableRoot>
+            </TableView>
+            <Button Text="Сохранить" Clicked="Button_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

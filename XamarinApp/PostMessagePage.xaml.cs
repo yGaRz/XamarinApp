@@ -10,21 +10,16 @@ using Xamarin.Forms.Xaml;
 namespace XamarinApp
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Page1 : ContentPage
+    public partial class PostMessagePage : ContentPage
     {
-        public Page1()
+        public PostMessagePage()
         {
             InitializeComponent();
         }
 
-        private void button2_Clicked(object sender, EventArgs e)
+        private async void Button_Clicked(object sender, EventArgs e)
         {
-            
-        }
-
-        private void button3_Clicked(object sender, EventArgs e)
-        {
-
+            await Navigation.PopAsync();
         }
     }
 }

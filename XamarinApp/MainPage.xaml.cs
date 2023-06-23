@@ -13,13 +13,18 @@ namespace XamarinApp
         public MainPage()
         {
             InitializeComponent();
+            buttonPostPage.Clicked += ToPostPage;
+            buttonServerSettings.Clicked += ToServerSettingsPage;
         }
 
-        int t = 0;
-        private void Button_Clicked(object sender, EventArgs e)
+        private void ToPostPage(object sender, EventArgs e)
         {
-            t++;
-            lbl1.Text = t.ToString();
+            Navigation.PushAsync( new PostMessagePage());
+        }
+
+        private void ToServerSettingsPage(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ServerSettingsPage());
         }
     }
 }
